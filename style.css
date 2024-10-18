@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    padding:2rem 0rem;
+    height:100vh;
+}
+h1,p{
+    margin:0;
+    color:black;
+    
+}
+a{
+    text-decoration: none;
+}
+svg{
+    width:16px;
+    height:16px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding:0.5rem 2rem;
+    align-items: center;
+    width:300px;
+    height:850px;
+    border:1.25px solid black;
+    h1{
+        padding:3rem 0rem;
+    }
+    .image--container{
+        border:1px solid black;
+        width:300px;
+        height:300px;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+        }
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding:2.5rem 0rem;
+        .input--container{
+            width:100%;
+            position: relative;
+            padding-bottom: 1rem;
+            input{
+                width: -webkit-fill-available;
+                padding:1rem 0.5rem;
+                border:none;
+                border-bottom: 1px solid gray;
+                background-color: #e9e9e9;
+                font-size: 16px;
+            }
+            svg{
+                position: absolute;
+                top:16px;
+                left:270px;
+                opacity: 0.5;
+                cursor:pointer;
+            }
+            
+        }
+        a{
+            align-self: flex-end;
+        }
+        button{
+            padding:1rem 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            border:none;
+            cursor: pointer;
+            background-color: rgb(47,0,220);
+        }
+    }
+    .support--container{
+        width: 300px;
+        height: 70px;
+        padding-top: 6.25rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        column-gap: 2rem;
+        justify-content: flex-start;
+        .btn--support{
+            width:40px;
+            height:40px;
+            border:none;
+            background-color: rgb(75, 54, 183);
+            color:white;
+            border-radius: 5px;
+            font-size: 30px;
+        }
+        p{
+            opacity: 0.5;
+        }
+    }
+}
